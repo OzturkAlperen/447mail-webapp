@@ -1,0 +1,116 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+}
+
+.header a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.logo {
+    height: 40px;
+}
+
+.header-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.header-menu li{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.header-menu li a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.menu-icon {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.2s ease, border 0.2s ease;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.menu-icon:hover {
+    transform: scale(1.1);
+    border: 2px solid #007bff;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    z-index: 1000;
+    min-width: 150px;
+}
+
+.dropdown-menu li {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    transition: color 0.2s ease;
+}
+
+.dropdown-menu li:hover {
+    color: #007bff;
+}
+
+.dropdown-menu img {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.2s ease, border 0.2s ease;
+    border: 2px solid transparent; /* Match hover behavior */
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.dropdown-menu img:hover {
+    transform: scale(1.1);
+    border: 2px solid #007bff;
+}
+
+.dropdown {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.dropdown.active .menu-icon {
+    border: 2px solid #007bff;
+}
