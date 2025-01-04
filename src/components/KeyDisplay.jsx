@@ -9,7 +9,7 @@ const KeyDisplay = ({ keyData, isPrivateKey = false, keyControls = null}) => {
             {keyData ? (
                     <div>
                         <pre>{JSON.stringify(keyData, null, 2)}</pre>
-                        <button className="key-adjustment-button" onClick={keyControls.onDownload}>
+                        <button className="key-adjustment-button" onClick={() => keyControls.onDownload(isPrivateKey)}>
                             Download {isPrivateKey ? "Private" : "Public"} Key
                         </button>
                         {!isPrivateKey && (
