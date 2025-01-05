@@ -2,3 +2,9 @@
     background-color: #007bff;
     color: #fff;
 }
+
+.help-page {
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+}
