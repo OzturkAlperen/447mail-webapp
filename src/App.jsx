@@ -134,7 +134,7 @@ const App = () => {
             label: "Download",
             iconSrc: "/download.png",
             type: "download",
-            href: "https://drive.usercontent.google.com/u/0/uc?id=1KIFsbB6YOSQnk-mnWCr9V7_W3drfipGv&export=download",
+            href: "https://drive.usercontent.google.com/download?id=1-EOEJOPrf5esVYnge5ITGghtUcvKPAVl&export=download",
         },
         {
             label: "Help",
